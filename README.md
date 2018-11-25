@@ -7,6 +7,8 @@ NOTA: todos los logos e imagenes de Magic-TheGathering son propiedad de sus resp
 
 1. breve descripcion y objetivo
 
+![alt text](https://github.com/ParserKnight/django-app-magic/blob/master/images/img1.png)
+
 1.1 Instalación
 
 2. Capturas de pantalla
