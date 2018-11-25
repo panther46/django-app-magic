@@ -1,0 +1,97 @@
+
+
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <title>Hello, world!</title>
+  </head>
+<style>
+{% load static %}
+.custom_form{
+  color:white;
+  background-color: black;
+  border-color: black;
+  opacity: 0.7;
+  width: 500px;
+  height:75px;
+  font-size: 35px;
+  border-radius: 7px;
+}
+body2{
+ background-image: url("{% static 'login.jpg' %}");
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ background-color: black;
+
+}
+#background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("{% static 'login.jpg' %}");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.9;
+    filter:alpha(opacity=80);
+    background-position: center center;
+}
+.font{
+font-family: 'Yantramanav', sans-serif;
+color:black;
+font-size: 45px;
+}
+</style>
+<body>
+  <div id="background">
+  <div class="container-fluid" style="padding-top:250px; padding-left:200px;">
+    <div class="col-lg-12">
+        {% load widget_tweaks %}
+        {% if form.errors %}
+            <p><font class="font">Your username and password didn't match. Please try again.</font></p>
+        {% endif %}
+
+        {% if next %}
+            {% if user.is_authenticated %}
+            <p><font class="font">Your account doesn't have access to this page. To proceed,
+            please login with an account that has access.</p></font>
+            {% else %}
+            <p><font class="font">Please login to see this page.</p></font>
+            {% endif %}
+        {% endif %}
+
+        <form method="post">
+        {% csrf_token %}
+        <table>
+        <tr>
+            <td><font class="font">Username:</td>
+        </tr>
+        <tr>
+            <td>{{ form.username |add_class:"custom_form" }}</td>
+        </tr>
+        <tr>
+            <td><font class="font">Password:</font></td>
+          </tr>
+          <tr>
+            <td>{{ form.password |add_class:"custom_form" }}</td>
+        </tr>
+        </table></font>
+        <br>
+        <input type="submit"class="btn btn-dark" value="login">
+        <input type="hidden" name="next" value="{{ next }}">
+        </form>
+    </div>
+
+  </div>
+</div>
+</body>
