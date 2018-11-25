@@ -5,7 +5,8 @@ NOTA: todos los logos e imagenes de Magic-TheGathering son propiedad de sus resp
       de la página oficial de Magic (https://magic.wizards.com/en). 
       
 
-1. breve descripcion y objetivo
+1. Breve descripcion y objetivo
+     
 
 ```pip3 install -r requirments.txt```
 
