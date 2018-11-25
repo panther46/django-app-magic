@@ -5,7 +5,7 @@ NOTA: todos los logos e imagenes de Magic-TheGathering son propiedad de sus resp
       de la página oficial de Magic (https://magic.wizards.com/en). 
       
 
-1. Breve descripcion y objetivo
+1. Descripción y objetivo
    
 El objetivo de esta aplicación de Django es proporcionar una forma rápida, sencilla y fiable de llevar un control sobre las cartas que posee un coleccionista de cartas Magic. Toda la aplicación fue realizada en Django/python, HTML5, CSS&Bootsrap. La aplicación permite múltiples usuarios, es decir, cada usuario posee su propio registro de cartas, permitiendo de esta manera, que múltiples coleccionistas puedan usarla si es desplegada en un servidor específico.
 
@@ -21,13 +21,20 @@ A partir de este momento
 
 La aplicación se encuentra todavía en estado de desarrollo, requiriendo una serie de Fixes.
 
-2. Capturas de pantalla
+2. Características
+
+![alt text](https://github.com/ParserKnight/django-app-magic/blob/master/images/img3.png)
+Imagen que muestra la página de login, donde se debe logear el usuario para acceder a sus cartas
 
 
+![alt text](https://github.com/ParserKnight/django-app-magic/blob/master/images/img2.png)
+Pagina principal que muestra
 
 ![alt text](https://github.com/ParserKnight/django-app-magic/blob/master/images/img1.png)
-![alt text](https://github.com/ParserKnight/django-app-magic/blob/master/images/img2.png)
-![alt text](https://github.com/ParserKnight/django-app-magic/blob/master/images/img3.png)
+Imagen que muestra la página que aparece inmediatamente después de realizar una búsqueda de cartas, permite añadir o eliminar del registro del usuario
+
+
+
 
 3. Futuros Fixs
 
