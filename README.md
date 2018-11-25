@@ -23,18 +23,17 @@ La aplicación se encuentra todavía en estado de desarrollo, requiriendo una se
 
 2. Características
 
+A continuación se muestra un preview de como luce la aplicación hasta el momento
+
 ![alt text](https://github.com/ParserKnight/django-app-magic/blob/master/images/img3.png)
 Imagen que muestra la página de login, donde se debe logear el usuario para acceder a sus cartas
 
-
 ![alt text](https://github.com/ParserKnight/django-app-magic/blob/master/images/img2.png)
-Pagina principal que muestra
+Pagina principal que muestra la totalidad de cartas que posee el usuario, con paginación.
 
 ![alt text](https://github.com/ParserKnight/django-app-magic/blob/master/images/img1.png)
 Imagen que muestra la página que aparece inmediatamente después de realizar una búsqueda de cartas, permite añadir o eliminar del registro del usuario
 
-
-
-
-3. Futuros Fixs
+3. Futuros Fixes
+   Ver Issues
 
